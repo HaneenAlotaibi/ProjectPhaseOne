@@ -37,7 +37,8 @@ case 2:
 	
 break;
 case 3:
-
+	SearchFile searchfile=new SearchFile();
+	searchfile.main(null);
 break;
 case 4:
 
