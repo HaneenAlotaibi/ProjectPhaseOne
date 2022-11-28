@@ -25,6 +25,4 @@ public class DeleteFile {
 		e.printStackTrace();  
 		}  
 		}
-		}  
-		
-
+	}
