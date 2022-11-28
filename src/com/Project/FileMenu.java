@@ -32,7 +32,8 @@ break;
 
 case 2:
 	
-
+	DeleteFile deletefile= new DeleteFile();
+	deletefile.main(null);
 	
 break;
 case 3:
