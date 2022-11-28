@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class FileMenu {
 	public static void main(String[] args) {
-
 		Scanner in = new Scanner(System.in);
 		boolean Menu = true;
 		int choice;
