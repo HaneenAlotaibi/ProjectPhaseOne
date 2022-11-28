@@ -21,7 +21,7 @@ public class SearchFile {
 			for (int i = 0; i < flist.length; i++) {
 				String filename = flist[i];
 				// System.out.println(flist[i]);
-				if (filename.equals(t)) {
+				if (filename.equalsIgnoreCase(t)) {
 					System.out.println(filename + " found");
 					flag = 1;
 				}
