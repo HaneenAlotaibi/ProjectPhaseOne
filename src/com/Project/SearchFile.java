@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class SearchFile {
 	public static void main(String[] args) {
 
-		File directory = new File("C:\\Users\\lenovo\\KFHjava\\Project");
+		File directory = new File("C:\\Users\\lenovo\\KFHjava\\ProjectPhase");
 		System.out.println("Please enter file name");
 		Scanner in = new Scanner(System.in);
 		String t = in.nextLine();
@@ -21,7 +21,7 @@ public class SearchFile {
 			for (int i = 0; i < flist.length; i++) {
 				String filename = flist[i];
 				// System.out.println(flist[i]);
-				if (filename.equalsIgnoreCase(t)) {
+				if (filename.equals(t)) {
 					System.out.println(filename + " found");
 					flag = 1;
 				}

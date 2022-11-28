@@ -6,7 +6,7 @@ import java.util.*;
 public class SortingFile {
 	public static void main(String[] args) {
 
-		File directory = new File("C:\\Users\\lenovo\\KFHjava\\Project");
+		File directory = new File("C:\\Users\\lenovo\\KFHjava\\ProjectPhase");
 
 		String[] flist = directory.list();
 		Set<String> j = new TreeSet<String>();
