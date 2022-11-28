@@ -24,7 +24,8 @@ switch (choice)
 {
 case 1:
 
-
+	CreateFile newFile=new CreateFile();
+	newFile.main(null);
 
 
 break;
