@@ -15,33 +15,37 @@ public class FileMenu {
 			System.out.println(" 1 : Add file ");
 			System.out.println(" 2 : Delete file ");
 			System.out.println(" 3 : Search file");
-			System.out.println(" 4 : Exit ");
+			System.out.println(" 4 : Go to main ");
+			System.out.println(" 5 : Exit ");
 			System.out.println("Please enter the choice number:");
 
 			choice = in.nextInt();
 			switch (choice) {
 			case 1:
 
-				CreateFile newFile = new CreateFile();
-				newFile.main(null);
+				CreateFile.main(null);
 
 				break;
 
 			case 2:
 
-				DeleteFile deletefile = new DeleteFile();
-				deletefile.main(null);
+				DeleteFile.main(null);
 
 				break;
 			case 3:
-				SearchFile searchfile = new SearchFile();
-				searchfile.main(null);
+
+				SearchFile.main(null);
 				break;
 			case 4:
 
 				System.out.println("Exit from the menu");
-				LockedMeApp app = new LockedMeApp();
-				app.main(null);
+
+				LockedMeApp.main(null);
+				break;
+			case 5:
+
+				System.out.println("Exit from the Program");
+				System.exit(0);
 				break;
 			default:
 				System.out.println("This is invalid Menu Choice! Please enter another choice number");

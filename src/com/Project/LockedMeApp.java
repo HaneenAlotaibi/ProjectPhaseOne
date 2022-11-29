@@ -21,15 +21,14 @@ public class LockedMeApp {
 			choice = in.nextInt();
 			switch (choice) {
 			case 1:
-				SortingFile sort = new SortingFile();
-				sort.main(null);
+
+				SortingFile.main(null);
 
 				break;
 
 			case 2:
 
-				FileMenu file = new FileMenu();
-				file.main(null);
+				FileMenu.main(null);
 
 				break;
 

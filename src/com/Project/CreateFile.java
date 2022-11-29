@@ -11,7 +11,9 @@ public class CreateFile {
 		String t = in.nextLine();
 		try {
 			File myObj = new File(t);
+			//System.out.println(myObj.getPath());
 			if (myObj.createNewFile()) {
+				
 				System.out.println("File created: " + myObj.getName());
 			} else {
 				System.out.println("File already exists.");
