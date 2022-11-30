@@ -1,14 +1,12 @@
 package com.Project;
 
-import java.io.IOException;
-
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class FileMenu {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		boolean Menu = true;
-		int choice;
+		int choice = 0;
 		while (true) {
 			System.out.println(" Menu");
 			System.out.println("Available Choices :");
@@ -19,7 +17,14 @@ public class FileMenu {
 			System.out.println(" 5 : Exit ");
 			System.out.println("Please enter the choice number:");
 
-			choice = in.nextInt();
+			try {
+				choice = in.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("Mismatch Exception");
+				// e.printStackTrace();
+				FileMenu.main(null);
+
+			}
 			switch (choice) {
 			case 1:
 
@@ -54,5 +59,4 @@ public class FileMenu {
 			}
 		}
 	}
-
 }
